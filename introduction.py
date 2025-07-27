@@ -18,3 +18,26 @@ def greet_user(name):
 #print the message
 name = input("Please enter your name: ")
 greet_user(name)
+
+
+#calculator
+def add_numbers(num1,num2):
+    return num1+num2
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+result = add_numbers(num1, num2)
+
+def substract_numbers(num1,num2):
+    return num1 - num2
+
+def multiply_numbers(num1,num2):
+    return num1 * num2
+
+def divide_numbers(num1,num2):
+    return num1/num2 if num2 !=0 else "Cannot divide by zero"
+   
+
+print(f"The sum of {num1} and {num2} is: {result}")
+print(f"The difference of {num1} and {num2} is: {substract_numbers(num1, num2)}")
+print("The product of {num1} and {num2} is : {multiply_numbers(num1,num2)}")
+print(f"The division of {num1} by {num2} is: {divide_numbers(num1,num2)}")
